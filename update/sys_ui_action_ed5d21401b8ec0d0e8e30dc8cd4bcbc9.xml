@@ -28,12 +28,26 @@
         <name>Start Qa Deployment</name>
         <onclick/>
         <order>200</order>
-        <script><![CDATA[var ums = new GlideRecord('x_terrd_snow_cicd_updateset_migration_status');
-ums.newRecord();
-ums.state = 'ATF Test In Progress';
-ums.updateset = current.getValue('sys_id');
-ums.target_instance = 'fd6e6a971b1e0450e8e30dc8cd4bcb58'; // sys Id of the record in x_terrd_snow_cicd_target_instance_profile table
-ums.insert();
+        <script><![CDATA[//Change the gliderecord variable as per need
+
+var gr = new GlideRecord('x_terrd_snow_cicd_target_instance_profile');
+if (gr.get('fd6e6a971b1e0450e8e30dc8cd4bcb58')) { // sys Id of the record in x_terrd_snow_cicd_target_instance_profile table
+
+    var ums = new GlideRecord('x_terrd_snow_cicd_updateset_migration_status');
+    ums.newRecord();
+    ums.state = 'ATF Test In Progress';
+    ums.updateset = current.getValue('sys_id');
+    ums.target_instance = gr.sys_id; 
+    ums.insert();
+}
+else {
+	
+	gs.addErrorMessage('Record not found in x_terrd_snow_cicd_target_instance_profile. Please configure target instance details');
+	
+}
+
+
+
 action.setRedirectURL(ums);]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -45,7 +59,7 @@ action.setRedirectURL(ums);]]></script>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>ed5d21401b8ec0d0e8e30dc8cd4bcbc9</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>Start Qa Deployment</sys_name>
         <sys_overrides/>
         <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
@@ -54,7 +68,7 @@ action.setRedirectURL(ums);]]></script>
         <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
         <sys_update_name>sys_ui_action_ed5d21401b8ec0d0e8e30dc8cd4bcbc9</sys_update_name>
         <sys_updated_by>Mahesh.Mani</sys_updated_by>
-        <sys_updated_on>2020-01-17 23:15:17</sys_updated_on>
+        <sys_updated_on>2020-01-22 01:07:36</sys_updated_on>
         <table>sys_update_set</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

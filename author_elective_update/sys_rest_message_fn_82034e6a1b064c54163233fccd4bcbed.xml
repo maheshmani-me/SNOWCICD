@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>TargetUpdatesetDeployment [ Default GET ]</qualified_name>
+        <rest_endpoint>https://foggyqa.service-now.com</rest_endpoint>
+        <rest_message display_value="TargetUpdatesetDeployment">7172ceaa1b064c54163233fccd4bcb7c</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 01:01:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>82034e6a1b064c54163233fccd4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_update_name>sys_rest_message_fn_82034e6a1b064c54163233fccd4bcbed</sys_update_name>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 01:01:20</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</application>
+        <comments/>
+        <file_path/>
+        <instance_id>ea919ac22b00198058eb1c9069da15ed</instance_id>
+        <instance_name>foggydev</instance_name>
+        <name>sys_rest_message_fn_82034e6a1b064c54163233fccd4bcbed</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>TargetUpdatesetDeployment [ Default GET ]</qualified_name><rest_endpoint>https://foggyqa.service-now.com</rest_endpoint><rest_message display_value="TargetUpdatesetDeployment">7172ceaa1b064c54163233fccd4bcb7c</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>Mahesh.Mani</sys_created_by><sys_created_on>2020-01-03 01:01:20</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>82034e6a1b064c54163233fccd4bcbed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope><sys_update_name>sys_rest_message_fn_82034e6a1b064c54163233fccd4bcbed</sys_update_name><sys_updated_by>Mahesh.Mani</sys_updated_by><sys_updated_on>2020-01-03 01:01:20</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-582239964</payload_hash>
+        <record_name>Default GET</record_name>
+        <reverted_from/>
+        <source>9895a1881b0ec0d0e8e30dc8cd4bcb05</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 01:01:20</sys_created_on>
+        <sys_id>4a03caa21b464c54163233fccd4bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f68ebc9700000001</sys_recorded_at>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 01:01:20</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>0203caa2f0464c54c27c0f480d82bcf2</update_guid>
+        <update_guid_history>0203caa2f0464c54c27c0f480d82bcf2:-582239964</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-17 20:20:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>03098d9795be45f0802269cad2367eb9</sys_id>
+        <sys_metadata>82034e6a1b064c54163233fccd4bcbed</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_parent display_value="TargetUpdatesetDeployment">7172ceaa1b064c54163233fccd4bcb7c</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_scope_delete display_value="">406641afd82f42d99cc2ea4d556f2161</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_82034e6a1b064c54163233fccd4bcbed</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_82034e6a1b064c54163233fccd4bcbed">4a03caa21b464c54163233fccd4bcbf2</sys_update_version>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-17 20:20:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

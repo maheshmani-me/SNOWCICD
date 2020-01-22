@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Updateset Migration Status" max_length="40" name="x_terrd_snow_cicd_updateset_migration_status" type="collection">
+        <element choice="1" label="State" mandatory="true" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ATF Test In Progress" sequence="0" value="ATF Test In Progress"/>
+                <element inactive_on_update="false" label="Test Passed" sequence="1" value="Test Passed"/>
+                <element inactive_on_update="false" label="Test Failed" sequence="2" value="Test Failed"/>
+                <element inactive_on_update="false" label="In Code Review(Pull Requested)" sequence="3" value="In Code Review"/>
+                <element inactive_on_update="false" label="Preview Completed" sequence="4" value="Preview Completed"/>
+                <element inactive_on_update="false" label="Failed" sequence="6" value="Failed"/>
+            </choice>
+        </element>
+        <element choice="1" label="Target Instance" mandatory="true" max_length="40" name="target_instance" read_only="true" reference="x_terrd_snow_cicd_target_instance_profile" type="reference">
+            <choice>
+                <element inactive_on_update="false" label="Qa" value="https://foggyqa.service-now.com/"/>
+            </choice>
+        </element>
+        <element label="Updateset" mandatory="true" max_length="32" name="updateset" read_only="true" reference="sys_update_set" type="reference"/>
+        <element label="Work Notes" max_length="4000" name="work_notes" type="journal"/>
+        <index name="index">
+            <element name="updateset"/>
+        </index>
+    </element>
+</database>

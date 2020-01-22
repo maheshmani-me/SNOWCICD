@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>If true, this will commit the code to github. If false, create a branch and will create a pull request</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_terrd_snow_cicd.github.direct_commit_without_code_review</name>
+        <read_roles/>
+        <suffix>github.direct_commit_without_code_review</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 22:58:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fb40befa1b86c054e8e30dc8cd4bcb2c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_terrd_snow_cicd.github.direct_commit_without_code_review</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_update_name>sys_properties_fb40befa1b86c054e8e30dc8cd4bcb2c</sys_update_name>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-21 21:37:36</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=fb40befa1b86c054e8e30dc8cd4bcb2c"/>
+</record_update>

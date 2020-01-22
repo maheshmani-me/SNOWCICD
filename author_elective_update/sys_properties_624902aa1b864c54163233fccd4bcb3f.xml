@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description/>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_terrd_snow_cicd.source.password</name>
+        <read_roles/>
+        <suffix>source.password</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 01:28:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>624902aa1b864c54163233fccd4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_terrd_snow_cicd.source.password</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_update_name>sys_properties_624902aa1b864c54163233fccd4bcb3f</sys_update_name>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 01:28:41</sys_updated_on>
+        <type>password</type>
+        <value>+7p#N9wQqO/7QnyXnHD8qQg8XqJu0LGakT0u+1rpJJxtwgGQA2zj2zDLoGPI9b+/qq1N</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=624902aa1b864c54163233fccd4bcb3f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</application>
+        <comments/>
+        <file_path/>
+        <instance_id>ea919ac22b00198058eb1c9069da15ed</instance_id>
+        <instance_name>foggydev</instance_name>
+        <name>sys_properties_624902aa1b864c54163233fccd4bcb3f</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>x_terrd_snow_cicd.source.password</name><read_roles/><suffix>source.password</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>Mahesh.Mani</sys_created_by><sys_created_on>2020-01-03 01:28:41</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>624902aa1b864c54163233fccd4bcb3f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_terrd_snow_cicd.source.password</sys_name><sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope><sys_update_name>sys_properties_624902aa1b864c54163233fccd4bcb3f</sys_update_name><sys_updated_by>Mahesh.Mani</sys_updated_by><sys_updated_on>2020-01-03 01:28:41</sys_updated_on><type>password</type><value>+7p#N9wQqO/7QnyXnHD8qQg8XqJu0LGakT0u+1rpJJxtwgGQA2zj2zDLoGPI9b+/qq1N</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=624902aa1b864c54163233fccd4bcb3f"/></record_update>]]></payload>
+        <payload_hash>530305511</payload_hash>
+        <record_name>x_terrd_snow_cicd.source.password</record_name>
+        <reverted_from/>
+        <source>9895a1881b0ec0d0e8e30dc8cd4bcb05</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 01:28:43</sys_created_on>
+        <sys_id>074902aa1b864c54163233fccd4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f6904db2c0000001</sys_recorded_at>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 01:28:43</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>c74902aa18864c54421cfb3c830eea46</update_guid>
+        <update_guid_history>c74902aa18864c54421cfb3c830eea46:530305511</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 05:54:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>49a8a668510845e0808b106c32e38829</sys_id>
+        <sys_metadata>624902aa1b864c54163233fccd4bcb3f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_terrd_snow_cicd.source.password</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_scope_delete display_value="">406641afd82f42d99cc2ea4d556f2161</sys_scope_delete>
+        <sys_update_name>sys_properties_624902aa1b864c54163233fccd4bcb3f</sys_update_name>
+        <sys_update_version display_value="sys_properties_624902aa1b864c54163233fccd4bcb3f">074902aa1b864c54163233fccd4bcb47</sys_update_version>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 05:54:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

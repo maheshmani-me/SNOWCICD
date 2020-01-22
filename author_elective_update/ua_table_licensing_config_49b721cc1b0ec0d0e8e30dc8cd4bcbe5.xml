@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_terrd_snow_cicd_migration_job</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2019-12-26 04:37:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>49b721cc1b0ec0d0e8e30dc8cd4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_terrd_snow_cicd_migration_job</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_update_name>ua_table_licensing_config_49b721cc1b0ec0d0e8e30dc8cd4bcbe5</sys_update_name>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2019-12-26 04:37:08</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</application>
+        <comments/>
+        <file_path/>
+        <instance_id>ea919ac22b00198058eb1c9069da15ed</instance_id>
+        <instance_name>foggydev</instance_name>
+        <name>ua_table_licensing_config_49b721cc1b0ec0d0e8e30dc8cd4bcbe5</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_terrd_snow_cicd_migration_job</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>Mahesh.Mani</sys_created_by><sys_created_on>2019-12-26 04:37:08</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>49b721cc1b0ec0d0e8e30dc8cd4bcbe5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_terrd_snow_cicd_migration_job</sys_name><sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope><sys_update_name>ua_table_licensing_config_49b721cc1b0ec0d0e8e30dc8cd4bcbe5</sys_update_name><sys_updated_by>Mahesh.Mani</sys_updated_by><sys_updated_on>2019-12-26 04:37:08</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>-1940796951</payload_hash>
+        <record_name>x_terrd_snow_cicd_migration_job</record_name>
+        <reverted_from/>
+        <source>9895a1881b0ec0d0e8e30dc8cd4bcb05</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2019-12-26 04:37:08</sys_created_on>
+        <sys_id>95b721cc1b0ec0d0e8e30dc8cd4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f407e79530000001</sys_recorded_at>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2019-12-26 04:37:08</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>9db721cc550ec0d07308e7e7c5dd20e6</update_guid>
+        <update_guid_history>9db721cc550ec0d07308e7e7c5dd20e6:-1940796951</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-02 19:38:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>0de5c567ff6a45a88a6e3b9ae6aed910</sys_id>
+        <sys_metadata>49b721cc1b0ec0d0e8e30dc8cd4bcbe5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_terrd_snow_cicd_migration_job</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_scope_delete display_value="">406641afd82f42d99cc2ea4d556f2161</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_49b721cc1b0ec0d0e8e30dc8cd4bcbe5</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_49b721cc1b0ec0d0e8e30dc8cd4bcbe5">95b721cc1b0ec0d0e8e30dc8cd4bcbe7</sys_update_version>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-02 19:38:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

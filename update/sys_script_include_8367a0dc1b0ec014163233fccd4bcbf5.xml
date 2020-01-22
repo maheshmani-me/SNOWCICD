@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_terrd_snow_cicd.CICDLibrary</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CICDLibrary</name>
+        <script><![CDATA[var CICDLibrary = Class.create();
+CICDLibrary.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+
+    handleUpdatesetDeployment: function() {
+
+        try {
+            var request_body = {
+                sourceSysId: current.getElement('target_instance.update_source_sys_id').toString(),
+                limitSet: current.getValue('updateset') // <-- these are actually the updateset to be deployed
+            };
+
+            this.postUpdatesetRequest(request_body);
+
+        } catch (ex) {
+            gs.addErrorMessage(ex.message);
+            current.state = "Failed";
+        }
+
+    },
+
+    postUpdatesetRequest: function(request_body) {
+
+        var req = new sn_ws.RESTMessageV2('x_terrd_snow_cicd.TargetUpdatesetDeployment', 'processLoadupdateset');
+        req.setEndpoint(req.getEndpoint()
+            .replace("<<target_sn_host_url>>", current.getElement('target_instance.instance_url')));
+		req.setBasicAuth(current.getElement('target_instance.username'), current.getElement('target_instance.password').getDecryptedValue());
+		
+        req.setRequestBody(JSON.stringify(request_body));
+        var response = req.execute();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+
+        if (httpStatus >= 200 && httpStatus < 300) {
+
+            var responseBodyObj = JSON.parse(responseBody);
+            if (!gs.nil(responseBodyObj.result.link)) {
+
+                var link = '[code]<a href="' + responseBodyObj.result.link + '" target="_blank">here</a>[/code]';
+                var message = "Preview completed in remote system. Please review the changes and hit commit button. Click " + link + " for remote updateset link";
+                current.work_notes = message;
+
+                current.state = "Preview Completed";
+            } else {
+
+                var link = '[code]<a href="' + responseBodyObj.result.progressLink + '" target="_blank">here</a>[/code]';
+                var message = "Something not right. Click " + link + " to view progress tracker record";
+                current.work_notes = message;
+
+                current.work_notes = "Response for postUpdateset: " + httpStatus + " " + responseBody;
+
+                current.state = "Failed";
+
+            }
+        } else {
+            current.work_notes = "Error in response for postUpdateset: " + httpStatus + " " + responseBody;
+            gs.addErrorMessage("Error occurred: " + httpStatus + " " + responseBody);
+            current.state = "Failed";
+        }
+
+    },
+
+
+    handlePushToGithub: function() {
+        try {
+
+            current.work_notes = "Kick starting github integration.";
+
+            ///check if direct commit is enabled. 
+            if (gs.getProperty('x_terrd_snow_cicd.github.direct_commit_without_code_review', false)) {
+
+                //working version for 
+                var sha_latest_commit = this.getByParam('git/refs/heads/master').object.sha;
+                var sha_base_tree = this.getByParam('git/commits/' + sha_latest_commit).tree.sha;
+
+                var sha_new_tree = this.postTreeData(sha_base_tree).sha;
+
+                //commit
+                var sha_new_commit = this.postByParam("git/commits", {
+                    "parents": [sha_latest_commit],
+                    "tree": sha_new_tree,
+                    "message": "Test message"
+                }).sha;
+
+                this.postByParam("git/refs/heads/master", {
+                    "sha": sha_new_commit
+                });
+
+                current.state = "In Code Review";
+
+            } else {
+                //GET /repos/:user/:repo/git/refs/heads/master
+                //Save sha_latest_commit
+
+
+                //GET /repos/:user/:repo/git/commits/{{sha_latest_commit}}
+                //Save sha_base_tree
+                var sha_latest_commit = this.getByParam('git/refs/heads/master').object.sha;
+
+                var branch_name = current.getElement('updateset.name').replace(/[^\w]/gi, '_');
+                current.work_notes = branch_name;
+                if (gs.nil(this.getByParam('git/ref/heads/' + branch_name))) {
+                    //create a branch from master is not exist
+                    this.postByParam('git/refs', {
+                        "ref": "refs/heads/" + branch_name,
+                        "sha": sha_latest_commit
+                    });
+
+                    current.work_notes = "Branch does not exist, creating one - " + branch_name;
+
+                } else {
+                    current.work_notes = "Branch already exist - " + branch_name;
+                }
+
+                sha_latest_commit = this.getByParam('git/refs/heads/' + branch_name).object.sha;
+
+                //POST /repos/:user/:repo/git/trees
+                //Save sha_new_tree
+                var sha_base_tree = this.getByParam('git/commits/' + sha_latest_commit).tree.sha;
+
+                var sha_new_tree = this.postTreeData(sha_base_tree).sha;
+
+                //POST /repos/:user/:repo/git/commits
+                var sha_new_commit = this.postByParam("git/commits", {
+                    "parents": [sha_latest_commit],
+                    "tree": sha_new_tree,
+                    "message": "Test message"
+                }).sha;
+
+                this.postByParam("git/refs/heads/" + branch_name, {
+                    "sha": sha_new_commit
+                });
+
+
+                if (this.getByParam('pulls?state=open').length > 0) {
+                    current.work_notes = "Pull request already exists. Please go to github to review the code and complete the pull request.";
+
+                    current.state = "In Code Review";
+                } else {
+                    //create pull request
+                    this.postByParam("pulls", {
+                        "title": "Pushing the updateset " + branch_name,
+                        "body": "Please pull these awesome changes in!",
+                        "head": branch_name,
+                        "base": "master"
+                    });
+
+                    current.state = "In Code Review";
+                }
+            }
+
+        } catch (ex) {
+            gs.addErrorMessage(ex.message);
+
+            current.work_notes = "Error occurred: " + ex.stack;
+        }
+    },
+
+    postTreeData: function(sha_base_tree) {
+        var request_body = {
+            "base_tree": sha_base_tree,
+            "tree": []
+        };
+
+        request_body.tree.push({
+            "path": "updatesets/" + current.getElement('updateset.name').replace(/[^\w]/gi, '_') + ".xml",
+            "mode": "100644",
+            "type": "blob",
+            "content": this.getUpdateSetXML()
+        });
+
+        var update_xml = new GlideRecord('sys_update_xml');
+        update_xml.addEncodedQuery('update_set=' + current.getValue('updateset'));
+        update_xml.query();
+
+        while (update_xml.next()) {
+
+            request_body.tree.push({
+                "path": "codebase/" + update_xml.getValue('type').replace(/[^\w]/gi, '_') + "/" + (update_xml.getValue('name') + "_" + update_xml.getValue('target_name')).replace(/[^\w]/gi, '_') + ".xml",
+                "mode": "100644",
+                "type": "blob",
+                "content": update_xml.getValue('payload')
+            });
+
+        }
+
+        return this.postByParam("git/trees", request_body);
+    },
+
+    postByParam: function(path, request_body) {
+
+        var req = new sn_ws.RESTMessageV2('x_terrd_snow_cicd.GithubAPI', 'PostMethod');
+
+        req.setEndpoint(req.getEndpoint()
+            .replace("<<github.host.url>>", gs.getProperty("x_terrd_snow_cicd.github.host.url"))
+            .replace("<<github.cicd.user>>", gs.getProperty("x_terrd_snow_cicd.github.cicd.user"))
+            .replace("<<github.cicd.repo>>", gs.getProperty("x_terrd_snow_cicd.github.cicd.repo"))
+            .replace("post_path", path));
+
+        req.setRequestBody(JSON.stringify(request_body));
+
+        if (gs.getProperty("x_terrd_snow_cicd.github.use_midserver_for_connection") == "true") {
+            req.setMIDServer(this.getMidServer());
+        }
+
+        req.setRequestHeader("Authorization", gs.getProperty("x_terrd_snow_cicd.github.authorization.token"));
+
+        var response = req.execute();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+
+        if (httpStatus >= 200 && httpStatus < 300) {
+            //no action needed
+            //gs.addInfoMessage("Response for " + path + ": " + httpStatus + " " + responseBody);
+            //current.work_notes = "Response for " + path + ": " + httpStatus + " " + responseBody;
+            return JSON.parse(responseBody);
+        } else {
+            current.work_notes = "Error in response for " + path + ": " + httpStatus + " " + responseBody;
+            gs.addErrorMessage("Error occurred: " + httpStatus + " " + responseBody);
+        }
+
+        return '';
+    },
+
+
+
+    getByParam: function(path) {
+
+        var req = new sn_ws.RESTMessageV2('x_terrd_snow_cicd.GithubAPI', 'Default GET');
+
+        req.setEndpoint(req.getEndpoint()
+            .replace("<<github.host.url>>", gs.getProperty("x_terrd_snow_cicd.github.host.url"))
+            .replace("<<github.cicd.user>>", gs.getProperty("x_terrd_snow_cicd.github.cicd.user"))
+            .replace("<<github.cicd.repo>>", gs.getProperty("x_terrd_snow_cicd.github.cicd.repo"))
+            .replace("get_path", path));
+
+
+        if (gs.getProperty("x_terrd_snow_cicd.github.use_midserver_for_connection") == "true") {
+            req.setMIDServer(this.getMidServer());
+        }
+
+        req.setRequestHeader("Authorization", gs.getProperty("x_terrd_snow_cicd.github.authorization.token"));
+
+        var response = req.execute();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+
+        if (httpStatus >= 200 && httpStatus < 300) {
+            //no action needed
+            //gs.addInfoMessage("Response for " + path + ": " + httpStatus + " " + responseBody);
+            //current.work_notes = "Response for " + path + ": " + httpStatus + " " + responseBody;
+            return JSON.parse(responseBody);
+        } else {
+            current.work_notes = "Error in response for " + path + ": " + httpStatus + " " + responseBody;
+            gs.addErrorMessage("Error occurred: " + httpStatus + " " + responseBody);
+        }
+
+        return '';
+    },
+
+    getUpdateSetXML: function() {
+        var updateSetExport = new global.UpdateSetExport();
+        var sysid = updateSetExport.exportUpdateSet(current);
+        var req = new sn_ws.RESTMessageV2('x_terrd_snow_cicd.DownloadUpdatesetXML', 'Default GET');
+        req.setEndpoint(req.getEndpoint().replace("<<sys_id>>", sysid).replace("<<this_instance>>", gs.getProperty('glide.servlet.uri')));
+		req.setBasicAuth(gs.getProperty('x_terrd_snow_cicd.updateset.download.username'), gs.getProperty('x_terrd_snow_cicd.updateset.download.password').getDecryptedValue());
+		
+        var response = req.execute();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+
+        if (httpStatus >= 200 && httpStatus < 300) {
+            return responseBody;
+        } else {
+            gs.addErrorMessage("Error occurred while downloading updateset");
+            return '';
+        }
+    },
+
+    getMidServer: function() {
+        var gr = new GlideRecord('ecc_agent');
+        //gr.addQuery('u_functions', 'CONTAINS', 'WINAD');
+        gr.orderByDesc('status');
+        gr.orderByDesc('stopped');
+        gr.query();
+
+        if (gr.next()) {
+            return gr.name;
+        }
+        return null;
+    },
+
+    getRowCount: function(table_name, encoded_query) {
+        gs.info("getRowCount: {0} **** {1} ", table_name, encoded_query, 'CICDLibrary');
+
+        var count = new GlideAggregate(table_name);
+        count.addEncodedQuery(encoded_query);
+        count.addAggregate('COUNT');
+        count.query();
+        var result = 0;
+        if (count.next())
+            result = count.getAggregate('COUNT');
+
+        return result;
+    },
+
+    getRecord: function(table_name, encoded_query) {
+
+        gs.info("getRecord: {0} **** {1} ", table_name, encoded_query, 'CICDLibrary');
+
+        var gr = new GlideRecord(table_name);
+        gr.addEncodedQuery(encoded_query);
+        gr.setLimit(1);
+        gr.query();
+
+        if (gr.next()) {
+            return gr;
+        }
+
+        return null;
+    },
+
+    getRecordForInsertorUpdate: function(table_name, encoded_query) {
+
+        var gr = new GlideRecord(table_name);
+        gr.addEncodedQuery(encoded_query);
+        gr.setLimit(1);
+        gr.query();
+
+        if (gr.next()) {
+            return gr;
+        } else {
+            gr.newRecord(); // create a new record and populate it with default values
+            return gr;
+        }
+    },
+
+    handleInsertOrUpdate: function(gr) {
+
+        if (gr.isNewRecord()) {
+            gr.insert();
+        } else {
+            gr.update();
+        }
+    },
+
+    getRecordSysId: function(table_name, encoded_query) {
+
+        var gr = new GlideRecord(table_name);
+        gr.addEncodedQuery(encoded_query);
+        gr.setLimit(1);
+        gr.query();
+
+        if (gr.next()) {
+            return gr.getValue("sys_id");
+        } else {
+            return '';
+        }
+    },
+
+    getGlideRecordList: function(table_name, encoded_query) {
+
+        gs.info("getGlideRecordList: {0} **** {1} ", table_name, encoded_query, 'CICDLibrary');
+
+        var gr = new GlideRecord(table_name);
+        gr.addEncodedQuery(encoded_query);
+        gr.query();
+
+        gs.info("getGlideRecordList - " + encoded_query, "CICDLibrary");
+
+        return gr;
+    },
+
+    handleRecordsToBeRemoved: function(table_name, encoded_query) {
+
+        gs.info("handleRecordsToBeRemoved: {0} **** {1} ", table_name, encoded_query, 'CICDLibrary');
+
+        var to_be_removed_gr = new GlideRecord(table_name);
+        to_be_removed_gr.addEncodedQuery(encoded_query);
+        to_be_removed_gr.query();
+
+        if (to_be_removed_gr.getRowCount() > 0 && to_be_removed_gr.getRowCount() < 100) {
+            to_be_removed_gr.deleteMultiple();
+
+        } else if (to_be_removed_gr.getRowCount() >= 100) {
+            gs.info("Not deleting to_be_removed coz count more than 100. Count: " + to_be_removed.getRowCount());
+        }
+
+    },
+
+    handleExceptionMessage: function(textMessage, exception) {
+        gs.addInfoMessage(textMessage + exception);
+        gs.info(textMessage + exception.stack, 'CICDLibrary');
+    },
+
+    type: 'CICDLibrary'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2019-12-26 18:36:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8367a0dc1b0ec014163233fccd4bcbf5</sys_id>
+        <sys_mod_count>131</sys_mod_count>
+        <sys_name>CICDLibrary</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_update_name>sys_script_include_8367a0dc1b0ec014163233fccd4bcbf5</sys_update_name>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-18 00:26:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

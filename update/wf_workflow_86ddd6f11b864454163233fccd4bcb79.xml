@@ -1,0 +1,2181 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"stages":{},"ends":["da59fe361b0ac054e8e30dc8cd4bcbb5"],"activities":{},"subflows":[]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>5659fe361b0ac054e8e30dc8cd4bcbce,1259fe361b0ac054e8e30dc8cd4bcbcc,d259fe361b0ac054e8e30dc8cd4bcbc9,9a59fe361b0ac054e8e30dc8cd4bcbcf,1259fe361b0ac054e8e30dc8cd4bcbb8,1659fe361b0ac054e8e30dc8cd4bcbb4</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>5659fe361b0ac054e8e30dc8cd4bcbce,1259fe361b0ac054e8e30dc8cd4bcbcc,d259fe361b0ac054e8e30dc8cd4bcbc9,9a59fe361b0ac054e8e30dc8cd4bcbcf,5e59fe361b0ac054e8e30dc8cd4bcbb6,da59fe361b0ac054e8e30dc8cd4bcbb5,d259fe361b0ac054e8e30dc8cd4bcbcd,1659b67e1bc6c054e8e30dc8cd4bcb8d,1259fe361b0ac054e8e30dc8cd4bcbb8,d259fe361b0ac054e8e30dc8cd4bcbaf,1659fe361b0ac054e8e30dc8cd4bcbb4</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Migration process</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">5659fe361b0ac054e8e30dc8cd4bcbce</start>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>da59b67e1bc6c054e8e30dc8cd4bcb8a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-04 00:44:20</sys_updated_on>
+        <table>x_terrd_snow_cicd_updateset_migration_status</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="Migration process">86ddd6f11b864454163233fccd4bcb79</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Migration process</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2019-12-31 19:03:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>86ddd6f11b864454163233fccd4bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Migration process</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_update_name>wf_workflow_86ddd6f11b864454163233fccd4bcb79</sys_update_name>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2019-12-31 19:03:02</sys_updated_on>
+        <table>x_terrd_snow_cicd_updateset_migration_status</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5659fe361b0ac054e8e30dc8cd4bcbce"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">5659fe361b0ac054e8e30dc8cd4bcbce</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>d259fe361b0ac054e8e30dc8cd4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Check pull requests and start deployment</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>d259fe361b0ac054e8e30dc8cd4bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>414</x>
+        <y>846</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d259fe361b0ac054e8e30dc8cd4bcbcd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbcd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>var lib = new x_terrd_snow_cicd.CICDLibrary();&#13;
+if (lib.getByParam('pulls?state=open').length &gt; 0) {&#13;
+    current.work_notes = "Pull request is open. Please go to github to review the code and complete the pull request.";&#13;
+&#13;
+    current.state = "In Code Review";&#13;
+} else {&#13;
+    current.work_notes = "No active pull request. Will push the code to Qa.";&#13;
+&#13;
+	lib.handleDeployment('loadUpdateSet');&#13;
+    &#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbcd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>var lib = new x_terrd_snow_cicd.CICDLibrary();&#13;
+if (lib.getByParam('pulls?state=open').length &gt; 0) {&#13;
+    current.work_notes = "Pull request is open. Please go to github to review the code and complete the pull request.";&#13;
+&#13;
+    current.state = "In Code Review";&#13;
+} else {&#13;
+    current.work_notes = "No active pull request. Will push the code to Qa.";&#13;
+&#13;
+	lib.handleDeployment('loadUpdateSet');&#13;
+    &#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check pull requests and start deployment">d259fe361b0ac054e8e30dc8cd4bcbcd</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>de59fe361b0ac054e8e30dc8cd4bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Check status</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1659fe361b0ac054e8e30dc8cd4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>891</x>
+        <y>171</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1659fe361b0ac054e8e30dc8cd4bcbb4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1659fe361b0ac054e8e30dc8cd4bcbb4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9659fe361b0ac054e8e30dc8cd4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>activity.result = getActivityResult();&#13;
+//Find if any Cabinet has sql_nodes Or ap_nodes&#13;
+function getActivityResult()&#13;
+{&#13;
+	var util = new x_terrd_snow_cicd.CiCdAtfLibrary();&#13;
+	var activity_result = util.getTestActivityStatus();&#13;
+	workflow.info("Get activity.result:"+activity_result);&#13;
+	&#13;
+	if(activity_result == "Failed")&#13;
+		current.state = "Test Failed";&#13;
+	else if(activity_result == "Successful")&#13;
+		current.state = "Test Passed";&#13;
+	&#13;
+	return activity_result;&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1659fe361b0ac054e8e30dc8cd4bcbb4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9659fe361b0ac054e8e30dc8cd4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>activity.result = getActivityResult();&#13;
+//Find if any Cabinet has sql_nodes Or ap_nodes&#13;
+function getActivityResult()&#13;
+{&#13;
+	var util = new x_terrd_snow_cicd.CiCdAtfLibrary();&#13;
+	var activity_result = util.getTestActivityStatus();&#13;
+	workflow.info("Get activity.result:"+activity_result);&#13;
+	&#13;
+	if(activity_result == "Failed")&#13;
+		current.state = "Test Failed";&#13;
+	else if(activity_result == "Successful")&#13;
+		current.state = "Test Passed";&#13;
+	&#13;
+	return activity_result;&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check status">1659fe361b0ac054e8e30dc8cd4bcbb4</activity>
+        <condition>activity.result == "Failed"</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failed</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1659fe361b0ac054e8e30dc8cd4bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check status">1659fe361b0ac054e8e30dc8cd4bcbb4</activity>
+        <condition>activity.result == "Running"</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Running</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1259fe361b0ac054e8e30dc8cd4bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check status">1659fe361b0ac054e8e30dc8cd4bcbb4</activity>
+        <condition>activity.result == "Successful"</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Successful</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9259fe361b0ac054e8e30dc8cd4bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>da59fe361b0ac054e8e30dc8cd4bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>1692</x>
+        <y>1380</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=da59fe361b0ac054e8e30dc8cd4bcbb5"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Initialize scratchpad variables</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1259fe361b0ac054e8e30dc8cd4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>15</x>
+        <y>125</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1259fe361b0ac054e8e30dc8cd4bcbcc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbcc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9259fe361b0ac054e8e30dc8cd4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>workflow.scratchpad.triggered = false;&#13;
+workflow.scratchpad.atfScheduleList = [];</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbcc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9259fe361b0ac054e8e30dc8cd4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>workflow.scratchpad.triggered = false;&#13;
+workflow.scratchpad.atfScheduleList = [];</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Initialize scratchpad variables">1259fe361b0ac054e8e30dc8cd4bcbcc</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1e59fe361b0ac054e8e30dc8cd4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>13</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Preview state</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1659b67e1bc6c054e8e30dc8cd4bcb8d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-04 00:44:17</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>105</x>
+        <y>970</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1659b67e1bc6c054e8e30dc8cd4bcb8d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1659b67e1bc6c054e8e30dc8cd4bcb8d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1a59fe361b0ac054e8e30dc8cd4bcbac</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-04 00:44:17</sys_updated_on>
+        <value>var lib = new x_terrd_snow_cicd.CICDLibrary();&#13;
+if (!gs.nil(workflow.scratchpad.deployUpdateSetResponse)) {&#13;
+&#13;
+    lib.handleDeployment(workflow.scratchpad.deployUpdateSetResponse.step, workflow.scratchpad.deployUpdateSetResponse);&#13;
+} else {&#13;
+	//if nothing found in scratch pad&#13;
+    //lib.handleDeployment('loadUpdateSet');&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1659b67e1bc6c054e8e30dc8cd4bcb8d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1a59fe361b0ac054e8e30dc8cd4bcbac</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-04 00:44:17</sys_updated_on>
+        <value>var lib = new x_terrd_snow_cicd.CICDLibrary();&#13;
+if (!gs.nil(workflow.scratchpad.deployUpdateSetResponse)) {&#13;
+&#13;
+    lib.handleDeployment(workflow.scratchpad.deployUpdateSetResponse.step, workflow.scratchpad.deployUpdateSetResponse);&#13;
+} else {&#13;
+	//if nothing found in scratch pad&#13;
+    //lib.handleDeployment('loadUpdateSet');&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Preview state">1659b67e1bc6c054e8e30dc8cd4bcb8d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>d659fe361b0ac054e8e30dc8cd4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Push to github</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>700</x>
+        <y>662</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5e59fe361b0ac054e8e30dc8cd4bcbb6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5e59fe361b0ac054e8e30dc8cd4bcbb6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>de59fe361b0ac054e8e30dc8cd4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>var lib = new x_terrd_snow_cicd.CICDLibrary();&#13;
+lib.handlePushToGithub();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5e59fe361b0ac054e8e30dc8cd4bcbb6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>de59fe361b0ac054e8e30dc8cd4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>var lib = new x_terrd_snow_cicd.CICDLibrary();&#13;
+lib.handlePushToGithub();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Push to github">5e59fe361b0ac054e8e30dc8cd4bcbb6</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Start the test cases if not started</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9a59fe361b0ac054e8e30dc8cd4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>403</x>
+        <y>23</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=9a59fe361b0ac054e8e30dc8cd4bcbcf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>9a59fe361b0ac054e8e30dc8cd4bcbcf</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1e59fe361b0ac054e8e30dc8cd4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>if (!workflow.scratchpad.triggered) {&#13;
+&#13;
+	workflow.scratchpad.atfScheduleStartedAt = new GlideDateTime().getValue();&#13;
+	&#13;
+    var gr = new GlideRecord('sys_atf_schedule');&#13;
+    gr.addEncodedQuery('active!=false');&#13;
+    //gr.setLimit(100);&#13;
+    gr.query();&#13;
+&#13;
+    gs.info('total ' + gr.getRowCount());&#13;
+&#13;
+    while (gr.next()) {&#13;
+        new global.ScheduledTestProcessor().executeScheduledSuites(gr.sys_id);&#13;
+&#13;
+        workflow.scratchpad.atfScheduleList.push(gr.getValue('sys_id'));&#13;
+&#13;
+        current.work_notes = "Started " + gr.name;&#13;
+    }&#13;
+&#13;
+&#13;
+    workflow.scratchpad.triggered = true;&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>9a59fe361b0ac054e8e30dc8cd4bcbcf</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1e59fe361b0ac054e8e30dc8cd4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>if (!workflow.scratchpad.triggered) {&#13;
+&#13;
+	workflow.scratchpad.atfScheduleStartedAt = new GlideDateTime().getValue();&#13;
+	&#13;
+    var gr = new GlideRecord('sys_atf_schedule');&#13;
+    gr.addEncodedQuery('active!=false');&#13;
+    //gr.setLimit(100);&#13;
+    gr.query();&#13;
+&#13;
+    gs.info('total ' + gr.getRowCount());&#13;
+&#13;
+    while (gr.next()) {&#13;
+        new global.ScheduledTestProcessor().executeScheduledSuites(gr.sys_id);&#13;
+&#13;
+        workflow.scratchpad.atfScheduleList.push(gr.getValue('sys_id'));&#13;
+&#13;
+        current.work_notes = "Started " + gr.name;&#13;
+    }&#13;
+&#13;
+&#13;
+    workflow.scratchpad.triggered = true;&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Start the test cases if not started">9a59fe361b0ac054e8e30dc8cd4bcbcf</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9659fe361b0ac054e8e30dc8cd4bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Switch">f84eda480a0a3c1800a6fa8c7badf346</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Switch based on state</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>d259fe361b0ac054e8e30dc8cd4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>130</x>
+        <y>614</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d259fe361b0ac054e8e30dc8cd4bcbc9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbc9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">f855a43e0a0a3c180106a59800a50a22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbc9</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>state</value>
+        <variable display_value="">f8575c7d0a0a3c1800b8f4d25403c852</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbc9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>field</value>
+        <variable display_value="">f85385830a0a3c18008599b17b971cbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbc9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>field</value>
+        <variable display_value="">f85385830a0a3c18008599b17b971cbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbc9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">f855a43e0a0a3c180106a59800a50a22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbc9</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>state</value>
+        <variable display_value="">f8575c7d0a0a3c1800b8f4d25403c852</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</activity>
+        <condition>activity.result == 'ATF Test In Progress'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>ATF Test In Progress</name>
+        <order>1001</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</activity>
+        <condition>activity.result == 'Deployed'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Deployed</name>
+        <order>1006</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>de59fe361b0ac054e8e30dc8cd4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</activity>
+        <condition>activity.result == 'Deployment Failed'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Deployment Failed</name>
+        <order>1007</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>d259fe361b0ac054e8e30dc8cd4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</activity>
+        <condition>activity.result == 'In Code Review'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>In Code Review</name>
+        <order>1004</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</activity>
+        <condition>activity.result == 'In Preview'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>In Preview</name>
+        <order>1005</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</activity>
+        <condition>activity.result == 'Test Failed'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Test Failed</name>
+        <order>1003</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</activity>
+        <condition>activity.result == 'Test Passed'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Test Passed</name>
+        <order>1002</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>d659fe361b0ac054e8e30dc8cd4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>12</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait before checking status again</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>d259fe361b0ac054e8e30dc8cd4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>422</x>
+        <y>978</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d259fe361b0ac054e8e30dc8cd4bcbaf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = parseInt(gs.getProperty("x_terrd_snow_cicd.updateset_migration.wait.atf.status", 60));</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>script</value>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>script</value>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d259fe361b0ac054e8e30dc8cd4bcbaf</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = parseInt(gs.getProperty("x_terrd_snow_cicd.updateset_migration.wait.atf.status", 60));</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait before checking status again">d259fe361b0ac054e8e30dc8cd4bcbaf</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait before checking status again</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1259fe361b0ac054e8e30dc8cd4bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+        <x>813</x>
+        <y>41</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1259fe361b0ac054e8e30dc8cd4bcbb8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = parseInt(gs.getProperty("x_terrd_snow_cicd.updateset_migration.wait.atf.status", 60));</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>script</value>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9259fe361b0ac054e8e30dc8cd4bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9659fe361b0ac054e8e30dc8cd4bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>script</value>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9259fe361b0ac054e8e30dc8cd4bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9659fe361b0ac054e8e30dc8cd4bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1259fe361b0ac054e8e30dc8cd4bcbb8</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = parseInt(gs.getProperty("x_terrd_snow_cicd.updateset_migration.wait.atf.status", 60));</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait before checking status again">1259fe361b0ac054e8e30dc8cd4bcbb8</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>da59fe361b0ac054e8e30dc8cd4bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d659fe361b0ac054e8e30dc8cd4bcbae</condition>
+        <from display_value="Preview state">1659b67e1bc6c054e8e30dc8cd4bcb8d</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1259fe361b0ac054e8e30dc8cd4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Wait before checking status again">d259fe361b0ac054e8e30dc8cd4bcbaf</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="In Preview">5a59fe361b0ac054e8e30dc8cd4bcbcb</condition>
+        <from display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1259fe361b0ac054e8e30dc8cd4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Preview state">1659b67e1bc6c054e8e30dc8cd4bcb8d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failed">1659fe361b0ac054e8e30dc8cd4bcbb5</condition>
+        <from display_value="Check status">1659fe361b0ac054e8e30dc8cd4bcbb4</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1659fe361b0ac054e8e30dc8cd4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Test Failed">5659fe361b0ac054e8e30dc8cd4bcbcb</condition>
+        <from display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1659fe361b0ac054e8e30dc8cd4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="End">da59fe361b0ac054e8e30dc8cd4bcbb5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Running">1259fe361b0ac054e8e30dc8cd4bcbb5</condition>
+        <from display_value="Check status">1659fe361b0ac054e8e30dc8cd4bcbb4</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1a59fe361b0ac054e8e30dc8cd4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Wait before checking status again">1259fe361b0ac054e8e30dc8cd4bcbb8</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Deployed">de59fe361b0ac054e8e30dc8cd4bcbca</condition>
+        <from display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1a59fe361b0ac054e8e30dc8cd4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="End">da59fe361b0ac054e8e30dc8cd4bcbb5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Deployment Failed">d259fe361b0ac054e8e30dc8cd4bcbcb</condition>
+        <from display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1e59fe361b0ac054e8e30dc8cd4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="End">da59fe361b0ac054e8e30dc8cd4bcbb5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d259fe361b0ac054e8e30dc8cd4bcbcf</condition>
+        <from display_value="Begin">5659fe361b0ac054e8e30dc8cd4bcbce</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>1e59fe361b0ac054e8e30dc8cd4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Initialize scratchpad variables">1259fe361b0ac054e8e30dc8cd4bcbcc</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">1e59fe361b0ac054e8e30dc8cd4bcbcc</condition>
+        <from display_value="Initialize scratchpad variables">1259fe361b0ac054e8e30dc8cd4bcbcc</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">da59fe361b0ac054e8e30dc8cd4bcbc8</condition>
+        <from display_value="Wait before checking status again">1259fe361b0ac054e8e30dc8cd4bcbb8</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5259fe361b0ac054e8e30dc8cd4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Check status">1659fe361b0ac054e8e30dc8cd4bcbb4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">de59fe361b0ac054e8e30dc8cd4bcbcd</condition>
+        <from display_value="Check pull requests and start deployment">d259fe361b0ac054e8e30dc8cd4bcbcd</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5659fe361b0ac054e8e30dc8cd4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Wait before checking status again">d259fe361b0ac054e8e30dc8cd4bcbaf</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">5e59fe361b0ac054e8e30dc8cd4bcbb3</condition>
+        <from display_value="Wait before checking status again">d259fe361b0ac054e8e30dc8cd4bcbaf</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5a59fe361b0ac054e8e30dc8cd4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">5a59fe361b0ac054e8e30dc8cd4bcbb7</condition>
+        <from display_value="Push to github">5e59fe361b0ac054e8e30dc8cd4bcbb6</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>5e59fe361b0ac054e8e30dc8cd4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Test Passed">d659fe361b0ac054e8e30dc8cd4bcbcb</condition>
+        <from display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9259fe361b0ac054e8e30dc8cd4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Push to github">5e59fe361b0ac054e8e30dc8cd4bcbb6</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Successful">9259fe361b0ac054e8e30dc8cd4bcbb5</condition>
+        <from display_value="Check status">1659fe361b0ac054e8e30dc8cd4bcbb4</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9659fe361b0ac054e8e30dc8cd4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="In Code Review">5259fe361b0ac054e8e30dc8cd4bcbcb</condition>
+        <from display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9659fe361b0ac054e8e30dc8cd4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Check pull requests and start deployment">d259fe361b0ac054e8e30dc8cd4bcbcd</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="ATF Test In Progress">5e59fe361b0ac054e8e30dc8cd4bcbca</condition>
+        <from display_value="Switch based on state">d259fe361b0ac054e8e30dc8cd4bcbc9</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>9e59fe361b0ac054e8e30dc8cd4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Start the test cases if not started">9a59fe361b0ac054e8e30dc8cd4bcbcf</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">9659fe361b0ac054e8e30dc8cd4bcbd0</condition>
+        <from display_value="Start the test cases if not started">9a59fe361b0ac054e8e30dc8cd4bcbcf</from>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>da59fe361b0ac054e8e30dc8cd4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <to display_value="Wait before checking status again">1259fe361b0ac054e8e30dc8cd4bcbb8</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2020-01-03 23:37:07</sys_created_on>
+        <sys_id>de59b67e1bc6c054e8e30dc8cd4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-03 23:37:07</sys_updated_on>
+        <workflow_version display_value="Migration process">da59b67e1bc6c054e8e30dc8cd4bcb8a</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=86ddd6f11b864454163233fccd4bcb79^sys_id!=da59b67e1bc6c054e8e30dc8cd4bcb8a">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

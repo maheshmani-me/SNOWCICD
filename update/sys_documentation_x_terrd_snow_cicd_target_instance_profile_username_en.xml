@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="username" label="Username" language="en" table="x_terrd_snow_cicd_target_instance_profile">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>username</element>
+            <help/>
+            <hint/>
+            <label>Username</label>
+            <language>en</language>
+            <name>x_terrd_snow_cicd_target_instance_profile</name>
+            <plural>Usernames</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Mahesh.Mani</sys_created_by>
+            <sys_created_on>2020-01-17 22:20:22</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a60ee6571b1e0450e8e30dc8cd4bcb58</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Username</sys_name>
+            <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+            <sys_update_name>sys_documentation_x_terrd_snow_cicd_target_instance_profile_username_en</sys_update_name>
+            <sys_updated_by>Mahesh.Mani</sys_updated_by>
+            <sys_updated_on>2020-01-17 22:20:22</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

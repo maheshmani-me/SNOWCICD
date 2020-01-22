@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_headers">
+    <sys_rest_message_headers action="DELETE">
+        <name>Authorization</name>
+        <rest_message display_value="GithubAPI">adafe5441b8ec0d0e8e30dc8cd4bcbeb</rest_message>
+        <sys_class_name>sys_rest_message_headers</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2019-12-26 05:15:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>005031081b8ec0d0e8e30dc8cd4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_update_name>sys_rest_message_headers_005031081b8ec0d0e8e30dc8cd4bcbbb</sys_update_name>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2019-12-26 05:15:36</sys_updated_on>
+        <value>token dcdd6588442e0ec83b9dbd5dc6c77540120d9b3b</value>
+    </sys_rest_message_headers>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</application>
+        <comments/>
+        <file_path/>
+        <instance_id>ea919ac22b00198058eb1c9069da15ed</instance_id>
+        <instance_name>foggydev</instance_name>
+        <name>sys_rest_message_headers_005031081b8ec0d0e8e30dc8cd4bcbbb</name>
+        <order/>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_headers"><sys_rest_message_headers action="INSERT_OR_UPDATE"><name>Authorization</name><rest_message display_value="GithubAPI">adafe5441b8ec0d0e8e30dc8cd4bcbeb</rest_message><sys_class_name>sys_rest_message_headers</sys_class_name><sys_created_by>Mahesh.Mani</sys_created_by><sys_created_on>2019-12-26 05:15:36</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>005031081b8ec0d0e8e30dc8cd4bcbbb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Authorization</sys_name><sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope><sys_update_name>sys_rest_message_headers_005031081b8ec0d0e8e30dc8cd4bcbbb</sys_update_name><sys_updated_by>Mahesh.Mani</sys_updated_by><sys_updated_on>2019-12-26 05:15:36</sys_updated_on><value>token dcdd6588442e0ec83b9dbd5dc6c77540120d9b3b</value></sys_rest_message_headers></record_update>]]></payload>
+        <payload_hash>-81376074</payload_hash>
+        <record_name>Authorization</record_name>
+        <reverted_from/>
+        <source>9895a1881b0ec0d0e8e30dc8cd4bcb05</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2019-12-26 05:15:36</sys_created_on>
+        <sys_id>7c80b9081b8ec0d0e8e30dc8cd4bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f40a1b2d30000001</sys_recorded_at>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2019-12-26 05:15:36</sys_updated_on>
+        <type>HTTP Headers</type>
+        <update_guid>7480b908e78ec0d07d9a5c3177180c10</update_guid>
+        <update_guid_history>7480b908e78ec0d07d9a5c3177180c10:-81376074</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2019-12-26 21:16:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message_headers">sys_rest_message_headers</sys_db_object>
+        <sys_id>05ab7adba51b4e589858b32524a78b10</sys_id>
+        <sys_metadata>005031081b8ec0d0e8e30dc8cd4bcbbb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_parent display_value="GithubAPI">adafe5441b8ec0d0e8e30dc8cd4bcbeb</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_scope_delete display_value="">406641afd82f42d99cc2ea4d556f2161</sys_scope_delete>
+        <sys_update_name>sys_rest_message_headers_005031081b8ec0d0e8e30dc8cd4bcbbb</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_headers_005031081b8ec0d0e8e30dc8cd4bcbbb">7c80b9081b8ec0d0e8e30dc8cd4bcb10</sys_update_version>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2019-12-26 21:16:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Use this if you are using enterprise github that is not available in public network. Default false</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_terrd_snow_cicd.github.use_midserver_for_connection</name>
+        <read_roles/>
+        <suffix>github.use_midserver_for_connection</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2019-12-26 19:57:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>463af8941bcec014163233fccd4bcbcf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_terrd_snow_cicd.github.use_midserver_for_connection</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_update_name>sys_properties_463af8941bcec014163233fccd4bcbcf</sys_update_name>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2020-01-21 21:37:19</sys_updated_on>
+        <type>boolean</type>
+        <value>false</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=463af8941bcec014163233fccd4bcbcf"/>
+</record_update>

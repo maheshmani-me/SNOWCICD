@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user>mahesh.mani</basic_auth_user>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>GithubAPI [ Default GET ]</qualified_name>
+        <rest_endpoint>&lt;&lt;github.host.url&gt;&gt;/repos/&lt;&lt;github.cicd.user&gt;&gt;/&lt;&lt;github.cicd.repo&gt;&gt;/get_path</rest_endpoint>
+        <rest_message display_value="GithubAPI">adafe5441b8ec0d0e8e30dc8cd4bcbeb</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>Mahesh.Mani</sys_created_by>
+        <sys_created_on>2019-12-26 05:11:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>69afe5441b8ec0d0e8e30dc8cd4bcbec</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="SNOW CICD" source="x_terrd_snow_cicd">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SNOW CICD">189529481b0ec0d0e8e30dc8cd4bcb4b</sys_scope>
+        <sys_update_name>sys_rest_message_fn_69afe5441b8ec0d0e8e30dc8cd4bcbec</sys_update_name>
+        <sys_updated_by>Mahesh.Mani</sys_updated_by>
+        <sys_updated_on>2019-12-26 23:43:08</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>
